@@ -4,23 +4,13 @@ env:
   TFPath: Azure/
 
 on:
-  push:
-    branches:
-      - main
-    paths:
-    - 'Azure/**'
-    - '!Azure/**.md'
-  pull_request_target:
-    branches:
-      - main
-    paths:
-    - 'Azure/**'
-    - '!Azure/**.md'
 # To be reviewed: https://securitylab.github.com/research/github-actions-preventing-pwn-requests/
+  workflow_dispatch:
+
 
 jobs:
   terraform:
-    name: "Day 1 - Terraform"
+    name: "Terraform Destroy"
     runs-on: ubuntu-latest
     env:
       TF_VAR_PREFIX: "EXN-1554562727-35"

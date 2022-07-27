@@ -17,8 +17,6 @@ on:
     - 'Azure/**'
     - '!Azure/**.md'
 # To be reviewed: https://securitylab.github.com/research/github-actions-preventing-pwn-requests/
-  workflow_dispatch:
-
 
 jobs:
   terraform:

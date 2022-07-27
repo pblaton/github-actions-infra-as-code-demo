@@ -24,8 +24,8 @@
       firewall_address:
         name: "Backend"
         type: "dynamic"
-#        sdn: "AzureSDN"
-        sdn: "azure"
+        sdn: "AzureSDN"
+#        sdn: "azure"
         sdn_addr_type: "private"
         filter: "Tag.type=websrv"
   - name: Configure dynamic Azure SQL address object
@@ -35,8 +35,8 @@
       firewall_address:
         name: "AzureSQL"
         type: "dynamic"
-#        sdn: "AzureSDN"
-        sdn: "azure"
+        sdn: "AzureSDN"
+#        sdn: "azure"
         sdn_addr_type: "private"
         filter: "Region=westeurope | ServiceTag=Sql"
   - name: Configure Azure SQL Egress firewall policy

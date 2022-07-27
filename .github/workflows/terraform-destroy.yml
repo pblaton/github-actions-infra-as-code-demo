@@ -55,6 +55,6 @@ jobs:
 
       - name: Terraform Destroy
         id: destroy
-        run: terraform destroy -force
+        run: terraform destroy -auto-approve
         continue-on-error: true
         working-directory: ${{ env.TFPath }}

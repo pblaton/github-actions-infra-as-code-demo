@@ -91,6 +91,8 @@ config system automation-stitch
     next
 end
 
+execute reboot
+
 %{ if fgt_license_file != "" }
 --===============0086047718136476635==
 Content-Type: text/plain; charset="us-ascii"
@@ -102,5 +104,4 @@ ${file(fgt_license_file)}
 
 %{ endif }
 
-execute reboot
 --===============0086047718136476635==--

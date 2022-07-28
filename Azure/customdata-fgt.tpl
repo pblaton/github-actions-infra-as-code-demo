@@ -101,4 +101,6 @@ Content-Disposition: attachment; filename="${fgt_license_file}"
 ${file(fgt_license_file)}
 
 %{ endif }
+
+execute reboot
 --===============0086047718136476635==--

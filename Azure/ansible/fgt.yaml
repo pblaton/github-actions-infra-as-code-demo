@@ -84,7 +84,7 @@
         utm_status: "enable"
         av_profile: "default"
         logtraffic: "all"
-        ssl_ssh_profile: "deep-inspection"
+        ssl_ssh_profile: "certificate-inspection"
         dnsfilter_profile: "default"
         application_list: "block-high-risk"
         ips_sensor: "protect_client"

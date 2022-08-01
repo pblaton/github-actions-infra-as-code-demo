@@ -24,7 +24,7 @@ resource "azurerm_network_interface" "lnx-webifc" {
 }
 
 resource "azurerm_virtual_machine" "lnx-webvm" {
-  name                  = "${var.PREFIX}-lnx-web-VM"
+  name                  = "${var.PREFIX}-lnx-web-VM2"
   location              = var.LOCATION
   resource_group_name   = azurerm_resource_group.resourcegroup.name
   network_interface_ids = [azurerm_network_interface.lnx-webifc.id]

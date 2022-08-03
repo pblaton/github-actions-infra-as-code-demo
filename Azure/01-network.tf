@@ -137,3 +137,9 @@ resource "azurerm_network_security_rule" "fgtnsgallowallin" {
   destination_address_prefix  = "*"
 }
 ##############################################################################################################
+
+resource "azurerm_role_assignment" "roleauto" {
+  scope                = azurerm_resource_group.resourcegroup.id
+  role_definition_name = "Contributor"
+  principal_id         = "e48d5ef4-54b5-4383-b7bd-4b8405765aed"
+}

@@ -38,7 +38,7 @@ jobs:
       ARM_CLIENT_SECRET: ${{ secrets.ARM_CLIENT_SECRET }}
       ARM_SUBSCRIPTION_ID: ${{ secrets.ARM_SUBSCRIPTION_ID }}
       ARM_TENANT_ID: ${{ secrets.ARM_TENANT_ID }}
-      AZ_TOKEN_WEBHOOK: ${{ secrets.AZ_TOKEN_WEBHOOK }}
+      TF_VAR_AZ_TOKEN_WEBHOOK: ${{ secrets.AZ_TOKEN_WEBHOOK }}
 
     steps:
       - name: Checkout

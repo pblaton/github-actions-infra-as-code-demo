@@ -16,7 +16,7 @@
       firewall_address:
         name: "Transit"
         subnet: "172.27.40.64/26"
-        type: "ipmask"
+        type: "ipmask"        
   - name: Configure dynamic backend address object
     fortios_firewall_address:
       vdom:  "{{ vdom }}"
